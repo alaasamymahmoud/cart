@@ -1,0 +1,46 @@
+const products = [
+    {
+        id:1,
+        name:"blouse",
+        price:1250,
+        image:'assests/blouse.jpg',
+        color:"green",
+    },
+    {
+        id:2,
+        name:"jacket",
+        price:1400,
+        image:"assests/jacket.jpg",
+        color:"offwhite",
+    },
+    {
+        id:3,
+        name:"jeans",
+        price:650,
+        image:"assests/jeans.jpg",
+        color:"babyblue",
+    },
+    {
+        id:4,
+        name:"blouse",
+        price:1250,
+        image:'assests/blouse.jpg',
+        color:"green",
+    },
+    {
+        id:5,
+        name:"jacket",
+        price:1400,
+        image:"assests/jacket.jpg",
+        color:"offwhite",
+    },
+    {
+        id:6,
+        name:"jeans",
+        price:650,
+        image:"assests/jeans.jpg",
+        color:"babyblue",
+    },
+];
+
+module.exports = products;

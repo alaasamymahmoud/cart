@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(232, 232, 232, 0.4);
+
+}
+
+/*NavBar*/
+.navbar{
+  min-height: 82px;
+
+}
+
+.bg-light{
+  background-color: #fff !important;
+}
+
+.navbar-nav{
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 0px;
+}
+
+#search-form{
+  width: 50%;
+}
+
+.navbar-brand{
+  margin-left: 2rem;
+}
+
+#basic-addon1{
+  background-color: #fff;
+  border-right: none;
+}
+.form-control{
+  border-left: none;
+}
+
+.bag-quantity{
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.bag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*NotFound*/
+.not-found{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(68, 68, 68);
+  min-height: 80vh;
+}
+
+.not-found h2{
+  font-size: 60px;
+}
+
+.not-found p{
+  font-size: 25px;
+}
+
+
+
+/*card*/
+.home-container{
+  padding: 2rem 4rem;
+}
+
+.home-container h2{
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.products{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.product{
+  width: 250px;
+  max-width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 2px 2px 5px rgba(94, 104, 121, 0.3);
+}
+
+.product img{
+  width: 80%;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 55%;
+}
+
+.product h3{
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.product .details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product .details .price{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.product button{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 2rem;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #4b70e2;
+}
+
+/* cart product*/
+.all-cart{
+  justify-content: space-between;
+}
+
+.cart-item, .all-details{
+  background-color: #fff;
+  max-width: 900px;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 0px 6px 3px rgba(94, 104, 121, 0.3);
+}
+
+.cart-items{
+  margin-top: -7rem;
+}
+
+.cart-item{
+  border-radius: 15px;
+}
+
+.all-details{
+  display: flex;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 0rem 0.7rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 100px;
+}
+
+@media (max-width: 767px) {
+  .all-details{
+  height: 150px;
+}
+}
+
+
+.cart-checkout{
+  background-color: #fff;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 0px 6px 3px rgba(94, 104, 121, 0.3);
+  padding: 1rem;
+  position: sticky;
+  top: 150px;
+  z-index: 10;
+}
+
+
+.all-details .detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.all-details .detail h5, .all-details .detail button{
+  margin-bottom: 0.2rem;
+}
+
+
+.all-details p{
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+.card-body p , .all-details p{
+  margin-bottom: 0px;
+}
+
+.card-details{
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.card-details img{
+  width: 50px;
+  height: 80px;
+}
+
+.card-actions{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.4rem;
+  align-items: flex-end;
+}
+.card-actions button, .all-details .remove-all{
+  border-style: none;
+  background-color: #fff;
+  display: block;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.card-actions .except{
+  color: #26ADDA;
+}
+
+.card-actions .remove, .all-details .remove-all{
+  color: #DF1660;
+}
+
+.quantity{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+.quantity .plus, .quantity .minus{
+  background-color:#26ADDA ;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border-style: none;
+  padding-bottom: 0.4rem;
+  color: #fff;
+  font-size: 30px;
+}
+
+.card-size{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-size .dropdown-toggle{
+  border: #DEDEDE 2px solid;
+  width: 100px;
+}
+
+.dropdown-toggle::after{
+  margin-left: 2rem;
+}
+
+.btn-group ul{
+  min-width: 35px;
+}
+
+/*
+<div className='cart-checkout col-sm-3'>
+                        <h4>Order Summary</h4>
+                        
+                        <div>
+                            <span className='sub-total'>Subtotal</span>
+                            <span className='sub-total-amount'></span>
+                        </div>
+                        <div >
+                            <span className='shipping'>Shipping</span>
+                            <span className='shipping-amount'></span>
+                        </div>
+                        <p>Have a Promo Code ?</p>
+                        <form className="d-flex">
+                            <input className="form-control me-2" type="text"/>
+                            <button className="btn" type="submit">Apply</button>
+                        </form>
+                        <div >
+                            <span className='discount'>Discount</span>
+                            <span className='discount-amount'></span>
+                        </div>
+                        <div >
+                            <span className='total-order'>Total</span>
+                            <span className='total-order-amount'></span>
+                        </div>
+                        <button className='check-out'>Checkout</button>
+                    </div>*/
